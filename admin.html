@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="beolvas.js"></script>
+    <script src="ajax.js"></script>
+    <script src="termek.js"></script>
+  
+    <script src="admin.js"></script>
+</head>
+<body>
+    <main>
+        <nav><a href="index.html">Kezdőlap</a></nav>
+        <header></header>
+        <aside>
+           
+
+        </aside>
+        <section id="sablon">
+            <table>
+                <tr class="kartya">
+                    <td class="nev"></td>
+                    <td class="ar"></td>
+                    <td><img class="kep"></td>
+                    <td class="leiras"></td>
+                    <td><input type="button" class="torles-gomb" value="Törlés"></td>
+                    <td><input type="button" class="modosit-gomb" value="Módosítás"></td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            <fieldset>
+
+                <legend>Új termék</legend>
+                <form>
+                    <label for="nev">termék neve:</label>
+                    <input type="text" id="nev" name="nev"><br><br>
+                    <label for="leiras">Termék leírás</label>
+                    <input type="text" id="leiras" name="leiras"><br><br>
+                    <label for="ar">Termék Ára: </label>
+                    <input type="text" id="ar" name="ar"><br><br>
+                    <label for="file">Kép: </label>
+                    <input type="file" id="file" name="file"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+        </article>
+        <footer>
+
+        </footer>
+    </main>
+</body>
+</html>

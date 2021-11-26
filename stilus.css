@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:bisque
+}
+main{
+    width:80%;
+    max-width: 1000px;
+    margin:auto;
+    background: bisque;
+}
+.kartya{
+    width:150px;
+    height:300px;
+    border:1px solid black;
+    background:white
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: a;
+    grid-gap: 2px;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+img{
+    width:80%;
+}
+#keres-div{
+    display:grid;
+    grid-area: form;
+    height:100%;
+    place-items: center;
+}
+#container{
+    display:grid;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    
+    "form a as"
+    "f f f";
+}           
+#kosarTartalma{
+    width:150px;
+    height:fit-content;
+    min-height: 600px;
+    border:1px solid black;
+    background:white;
+    position: relative;
+
+}
+#ar{
+    border:1px dashed gray
+}
+.termekKosarban{
+    display:flex;
+    justify-content: space-between;
+}
+.termekKosarban p{
+    margin:5px;
+}
+#fizetes{
+    position: absolute;
+    bottom:5px;
+    left:5px;
+}
+tr,table{
+    width:100% !important;
+}

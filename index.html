@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="beolvas.js"></script>
+    <script src="ajax.js"></script>
+    <script src="termek.js"></script>
+    <script src="kosar.js"></script>
+    <script src="script.js"></script>
+    <title>Li Richárd</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+        <header>Webáruház</header>
+        <nav>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="fizetes.html">Fizetes</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+        </nav>
+       <div id="keres-div">
+
+           
+           <form>
+               <label for="kereses">Keresés:</label>
+               <input type="text" name="kereses" id="kereses">
+              
+            </form>
+        </div>
+     
+        
+        <aside>
+           
+            <div id="kosarTartalma">
+                <div id="termekTarolas"></div>
+                <input type="button" value="tovább a fizetéshez" id="fizetes" onclick='window.location.href="/fizetes.html";'>
+                <div class="osszeg"></div>
+            </div>
+
+        </aside>
+        <section id="sablon">
+            <div class="kartya">
+                <h3></h3>
+                <img src="" alt="">
+                <p id="leiras"></p>
+                
+                <p id="ar"></p>
+
+                <input type="button" value="Kosárba" id="kosarba" >
+            </div>
+        </section>
+        <article>
+            
+        </article>
+        <footer></footer>
+    </div>
+    </main>
+</body>
+</html>
